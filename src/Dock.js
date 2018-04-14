@@ -121,7 +121,7 @@ function getDockStyles(
     break;
   }
 
-  const transitions = getTransitions(duration);
+  const transitions = isVisible ? getTransitions(duration) : [];
 
   return [
     styles.dock,
